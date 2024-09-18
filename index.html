@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar using JS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--google font link-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"><!--stylesheet-->
+
+</head>
+<body>
+  <div class="menu-btn">
+    <ion-icon name="menu"></ion-icon>
+  </div>
+  <div class="side-bar">
+    <header>
+      <div class="close-btn">
+        <ion-icon name="close"></ion-icon>
+      </div>
+      <div class="profile-img">
+        <img src="../sidebar/images/profile-img.jpg"alt="profile-image">
+      </div>
+      <h1>Stanley</h1>
+    </header>
+    <div class="menu">
+      <div class="menu-item">
+        <a href="#"><ion-icon name="desktop"></ion-icon>Dashboard</a>
+      </div>
+      <div class="menu-item">
+        <a href="#"><ion-icon name="newspaper"class="sub-btn"data-target="toggle-1"></ion-icon>Products<ion-icon name="chevron-forward"class="drop-down"></ion-icon></a>
+      <div class="sub-menu">
+        <a href="#"class="sub-item">item1</a>
+        <a href="#"class="sub-item">item1</a>
+        <a href="#"class="sub-item">item1</a>
+        <a href="#"class="sub-item">item1</a>
+      </div>
+      </div>
+      <div class="menu-item">
+        <a href="#"><ion-icon name="cog"></ion-icon>Settings</a>
+      </div>
+      <div class="menu-item">
+        <a href="#"><ion-icon name="person"></ion-icon>User Details</a>
+      </div>
+      <div class="menu-item">
+        <a href="#"><ion-icon name="people"></ion-icon>About us</a>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script><!--iconic icons link-->
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
